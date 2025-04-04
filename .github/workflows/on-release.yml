@@ -13,6 +13,7 @@ jobs:
         uses: actions/setup-java@v4
         with:
           java-version: 21
+          distribution: 'temurin'
           server-id: github
           settings-path: ${{ github.workspace }}
       - name: Build JARs
