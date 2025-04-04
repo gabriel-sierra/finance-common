@@ -16,6 +16,13 @@ jobs:
           distribution: 'temurin'
           server-id: github
           settings-path: ${{ github.workspace }}
+
+      - uses: EmpireLife/google-github-actions/auth@v0
+
+      - uses: EmpireLife/google-github-actions/artifacts-gcloud-config@v0
+        with:
+          platform: java
+
       - name: Build JARs
         run: ./gradlew build
 
@@ -33,6 +40,7 @@ jobs:
         uses: actions/setup-java@v4
         with:
           java-version: 21
+          distribution: 'temurin'
           server-id: github
           settings-path: ${{ github.workspace }}
       - id: auth-publish
