@@ -1,0 +1,43 @@
+{
+  "type": "record",
+  "name": "Avro",
+  "fields": [
+    {
+      "name": "event",
+      "type": {
+        "type": "record",
+        "name": "EventRecord",
+        "fields": [
+          {"name": "class", "type": "string"},
+          {"name": "json", "type": "string"}
+        ]
+      }
+    },
+    {
+      "name": "state",
+      "type": {
+        "type": "record",
+        "name": "StateRecord",
+        "fields": [
+          {"name": "class", "type": "string"},
+          {"name": "json", "type": "string"}
+        ]
+      }
+    },
+    {
+      "name": "output",
+      "type": {
+        "type": "record",
+        "name": "OutputRecord",
+        "fields": [
+          {"name": "class", "type": "string"},
+          {"name": "json", "type": "string"}
+        ]
+      }
+    },
+    {"name":  "duration", "type": "long"},
+    {"name":  "startTime", "type":  "string"},
+    {"name":  "eventId", "type":  "string"},
+    {"name":  "eventType", "type":  "string"}
+  ]
+}

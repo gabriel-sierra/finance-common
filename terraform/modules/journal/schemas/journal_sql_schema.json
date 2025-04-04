@@ -1,0 +1,73 @@
+[
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE",
+        "name": "class",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "json",
+        "type": "STRING"
+      }
+    ],
+    "mode": "NULLABLE",
+    "name": "event",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE",
+        "name": "class",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "json",
+        "type": "STRING"
+      }
+    ],
+    "mode": "NULLABLE",
+    "name": "state",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE",
+        "name": "class",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "json",
+        "type": "STRING"
+      }
+    ],
+    "mode": "NULLABLE",
+    "name": "output",
+    "type": "RECORD"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "duration",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "startTime",
+    "type": "TIMESTAMP"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "eventId",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "eventType",
+    "type": "STRING"
+  }
+]

@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "ca.empire.finance.common.proto";
+
+message BucketNotification {
+  string kind = 1;
+  string id = 2;
+  string selfLink = 3;
+  string name = 4;
+  string bucket = 5;
+  string generation = 6;
+  string metageneration = 7;
+  string contentType = 8;
+  string timeCreated = 9;
+  string updated = 10;
+  string storageClass = 11;
+  string timeStorageClassUpdated = 12;
+  string size = 13;
+  string md5Hash = 14;
+  string mediaLink = 15;
+  string crc32c = 16;
+  string etag = 17;
+}
